@@ -1,0 +1,478 @@
+/****************
+Reset
+****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+body {
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:focus {
+  outline: none;
+}
+strong {
+  font-weight: bold; 
+}
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table; 
+}
+.grouping:after {
+  clear: both; 
+}
+img, iframe, video, object {
+  max-width: 100%; 
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/***************
+Global
+***************/
+::-moz-selection {
+  background-color: #eb2428; 
+}
+::selection {
+  background-color: #eb2428; 
+
+}
+
+/****** FONTS **********
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+
+************************/
+a {text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 65px;
+  color: #000000; 
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+h4 { 
+  font-size: 18px; 
+  color: #D6AD86 ;
+  font-family: 'Montserrat', sans-serif;
+}
+.white { color: white; }
+.skin { color: #D6AD86 ; }
+
+
+/********* Button ********/
+.button {
+  display: block;
+  padding: 20px 0;
+  font-size: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn-black {
+  border: 1px solid #000;
+  background-color: #000;
+  color: white;
+}
+
+.btn-skin {
+  border: 1px solid #D6AD86;
+  color: white;
+  background-color: #D6AD86;
+}
+/********** end Button *******/
+
+/*********** Navigation ********/
+.main-nav {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+  color: white;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.logo {
+  
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+
+}
+
+.nav-list a,.nav-side a{
+  display: inline-block;
+}
+
+.nav-list a {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.nav-side a {
+  padding: 0 5px;
+  font-size: 22px;
+}
+.nav-list > ul > li ,
+.nav-side > ul > li {
+  display: inline-block;
+}
+
+/*********Navigation ends*******/
+
+/********* Hero Banner *******/
+.hero {
+  position: relative;
+  background-image: url(../img/banner_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+}
+
+.welcome-div {
+  position: absolute;
+  max-width: 50%;
+  left: 8%;
+  bottom: 350px;
+}
+
+.welcome-div h1 {
+  padding-bottom: 50px;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+/******** Hero banner ends ********/
+
+/******* About section *********/
+.container-abt {
+  position: relative;
+  height: 500px;
+  
+}
+
+.about {
+  position: absolute;
+  display: flex;
+  top: -200px;
+  left: 10%;
+  right: 10%;
+  background-color: #ffffff;
+  justify-content: space-around;
+  padding: 80px 60px;
+  box-shadow: 0px 20px 40px 0px rgba(221, 221, 221, 0.3)
+
+}
+
+.abt { 
+  width: 50% ;
+  padding-right: 20px;
+ }
+
+.abt h1 { 
+  font-size: 46px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 40px;
+  }
+
+.abt p {
+  margin-bottom: 40px;
+  }
+
+
+/******* About section ends ******/
+/*****************Food Menu *************/
+
+.food-menu{
+  margin: 100px  50px;
+}
+
+.food-menu h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.food-menu > h1,
+.food-menu > h4 {
+  text-align: center;
+} 
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-item {
+  border: 1px solid #D6AD86;
+
+}
+
+.menu-item img {
+  height: 100%;
+  width: 100% ;
+}
+
+.menu-item {
+  display: flex;
+  flex-basis: 550px;
+  margin-bottom: 40px;
+}
+
+.menu-item h3 {
+  padding-top: 20px;
+}
+
+.menu-item h4 {
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+/******** food menu ends *********/
+/******** Video********/
+.video {
+  position: relative;
+  background-image: url("../img/intro_video_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.play-button {
+  position: absolute;
+  background-color: #D6AD86 ;
+  border:1px solid #D6AD86 ;
+  padding: 55px 50px;
+  border-radius: 50%;
+  left: 43%;
+  top: 40%;
+
+}
+/********end video********/
+/**** Testimonials ******/
+.carousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  margin: 200px 100px;
+}
+
+.testimonial h4 ,
+.testimonial h1 {
+  text-align: center;
+}
+
+.testimonial h1 {
+  margin-bottom: 50px;
+}
+
+.testimonial p {
+  border: 1px solid #D6AD86;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  width: 350px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.details h3 {
+  margin-left: 20px;
+
+}
+/*****testimonial ends***/
+/*********Contact *****/
+.contact {
+  
+  background-image: url("../img/contact_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+
+.card1 {
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 300px;
+
+  padding: 80px 60px;
+}
+
+.card1 h1 {
+  font-size: 30px;
+}
+.card1 h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.card1 p {
+  font-size: 15px;
+  color: #7b7b7b;
+}
+
+.card1 p:last-child {
+  color: #000000;
+}
+/***** end of contact *******/
+
+/**********footer ******/
+.footer {
+  background-color: #1C1A18;
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #A9A9A9;
+}
+
+.top {
+  padding:100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1 .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.col-2 {
+   flex-basis: 200px;
+}
+.quick-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-links ul {
+  padding-top: 20px;
+  
+}
+
+.quick-links li {
+  line-height: 2;
+  font-size: 15px;
+  color: #A9A9A9;
+}
+.col-3 {
+  max-width: 250px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.inputAddOn {
+  display: flex;
+  margin: 15px 0;
+}
+
+.inputAddOnField {
+  flex: 1;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.inputAddOnItem {
+background-color: #D6AD86;
+
+}
+
+.skull {
+  padding: 0 15px;
+  font-size: 30px;
+}
+/*****end footer ******/

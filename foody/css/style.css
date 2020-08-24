@@ -1,0 +1,332 @@
+/****************
+Reset
+****************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.4;
+  font-family: "Open Sans",Arial, sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:focus {
+  outline: none;
+}
+strong {
+  font-weight: bold; 
+}
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table; 
+}
+.grouping:after {
+  clear: both; 
+}
+img, iframe, video, object {
+  max-width: 100%; 
+}
+/***************
+Global
+***************/
+::-moz-selection {
+  background-color: #eb2428; 
+}
+::selection {
+  background-color: #eb2428; 
+}
+
+.wrapper {
+  width:960px;
+  margin: 0 auto;
+}
+
+a { text-decoration: none;
+  color: inherit; }
+
+body { font-family: 'Open Sans', sans-serif;}
+
+.orange { color: #ff7404; }
+.gray { color: #868E96; }
+.dark-gray { color: #495057; }
+
+.d-flex {
+  display: flex;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+/******form styling **********/
+
+input[type=text],
+input[type=email],
+ textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  height: 300px;
+}
+
+/********************/
+.nav-bar {
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+
+.menu ul li {
+  display: inline-block;
+  width: 100px;
+}
+
+.menu ul li a {
+  font-weight: bold;
+  
+}
+
+.menu ul li a:hover {
+  font-size: 20px;
+}
+
+/********** Button *******/
+.button {
+  padding: 15px 35px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all .25s linear;
+}
+
+.btn-orange {
+  background-color: #ff7404;
+  color: white; 
+}
+
+.btn-clear
+{
+  background: transparent;
+  border: 2px solid #ffffff;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #ff7404;
+}
+
+/******hero *******/
+.hero {
+  position: relative;
+  background-image: url("../img/hero_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.hero-content{
+  color: #ffffff;
+  font-style: inherit;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+/************ Contact section *****/
+.top-slant:before {
+  position: absolute;
+  background-color: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: -100px;
+  height: 240px;
+  transform: skewY(-5deg);
+}
+.container {
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+
+ 
+.contact-details,.contact-form {
+  z-index: 10;
+}
+
+ .contact-form{
+  color: #868E96 ;
+  margin-left: 50px;
+}
+
+.left-mar {
+  margin-left: 30px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.container h4 {
+  font-size: 24px;
+}
+
+.container p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+/******** call toaction********/
+.call-to-action{
+  text-align: center;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+::placeholder {
+  font-size:16px;
+}
+
+
+.call-to-action div:first-child {
+  flex-grow: 1;
+}
+
+.call-to-action h3{
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.call-to-action p {
+  font-size: 15px;
+}
+
+/*********footer *******/
+.footer {
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+
+.col_1,.col_2,.col_3 {
+  flex-basis: 30%;
+  margin-left: 100px;
+  line-height: 2;
+}
+
+h3 {
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.col_2 > h3:nth-child(even){
+  margin-top: 20px;
+}
+
+.lbl {
+  margin-top: 20px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons span {
+  margin-left: 15px;
+}
+
+.quick-links {
+  line-height: 2.5;
+}

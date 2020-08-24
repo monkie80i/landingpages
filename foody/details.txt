@@ -1,0 +1,40 @@
+h1 80px Open Sans,arial,sans-serif
+
+
+#ff7404 orange
+#868E96 gray
+#495057 dark gray for form entries
+
+logo 32px
+menu list items 16px
+
+hero subtext 20px;
+hero button 13 px all caps
+
+form 15px #868E96 gray
+
+Contact details 
+heading h4 24 px
+items 20px;
+
+testimonial 
+h2 50px all caps black
+p 	20px;
+names in h4 18px;
+detail #ccc 14px;
+
+call to action 
+h3 16px
+p 15px
+
+footer
+
+
+<link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+
+icons
+class="icon ion-android-mail orange"
+class="icon ion-ios-telephone orange"
+class="icon ion-ios-location orange"
+
+fa fa-facebook

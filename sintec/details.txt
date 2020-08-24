@@ -1,0 +1,60 @@
+company red : #E22104;
+gray-bg: #F6F6F6;
+gray-bg-card :#FBF9FF;
+gray-color-text: #888888;
+h2 42px
+black #202E31;
+
+fonts 
+roboto sans serrif all
+heebo headings
+
+
+headbar
+fontsize 13,14
+
+menu
+fontsize 14px;
+black #202E31;
+
+jumbotron
+h1 80
+p 14px
+color #2A2A2A;
+
+main content
+h2 24px; color #2A2A2A;
+span 14px; color #999
+p 15px; #888;
+
+like share comment
+span 14px #888;
+
+
+next=prev
+p 14px color:#888;
+h4 18px color:#2A;
+
+author
+h4 16px; #2A;
+p 15px;#888;
+
+comments
+p 15px #777777;
+name 16px #2A;
+date#999,rply#8888 14px; 
+
+form 
+h4 18 px;#2A;
+button 14px;
+
+side
+h4 20px;
+all text #88888;
+
+
+footer
+all small text 14px color #888;
+input bg #353535;
+headings 20px; #F;
+

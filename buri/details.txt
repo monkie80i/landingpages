@@ -1,0 +1,15 @@
+Colors and fonts in the site
+
+FONTS
+Montserrat
+Playfair Display
+
+
+COLORS
+#212529 dark brown
+#D6AD86 the skin color
+#A9A9A9 gray
+
+PAGES
+home.html
+
